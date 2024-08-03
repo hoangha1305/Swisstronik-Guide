@@ -35,7 +35,7 @@ async function main() {
   
   await setMessageTx.wait()
 
-  console.log("Transaction Receipt: ", `https://explorer-evm.testnet.swisstronik.com/tx/${setMessageTx.hash}`);
+  console.log("Transaction hash: ", `https://explorer-evm.testnet.swisstronik.com/tx/${setMessageTx.hash}`);
 }
 
 main().catch((error) => {

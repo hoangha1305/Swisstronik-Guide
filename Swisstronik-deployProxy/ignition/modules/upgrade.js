@@ -38,6 +38,7 @@ async function main() {
   const upgradeTx = await tx.wait();
   console.log("Tx hash:", upgradeTx.hash);
   console.log('Contract upgraded successfully!');
+  console.log("Transaction hash: ", `https://explorer-evm.testnet.swisstronik.com/tx/${upgradeTx.hash}`);
 
 }
 
